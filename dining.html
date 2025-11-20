@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dining — Opulent Home</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Dining collection — tables, chairs and dining sets.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html" aria-label="Opulent Home logo">
+          <img src="assets/images/logo.jpg" alt="Opulent Home" width="60" height="34" style="display:block">
+        </a>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="dining.html" aria-current="page">Dining</a>
+        <a href="bedroom.html">Bedroom</a>
+        <a href="kitchen.html">Kitchen</a>
+        <a href="backyard.html">Backyard</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="search">🔍</button>
+        <button class="icon-btn" aria-label="cart">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <h1>Dining Collection — <span class="accent">Entertain in style</span></h1>
+          <p>Tables and seating crafted for memorable meals. Solid hardwood, hand-polished finishes, and elegant profiles.</p>
+          <a href="#sets" class="btn primary">Shop Dining Sets</a>
+        </div>
+        <div class="hero-art">
+          <img class="hero-scenery" src="assets/images/dining_chair.jpg" alt="dining table illustration" style="width:100%;height:auto;border-radius:18px;box-shadow:var(--shadow)">
+        </div>
+      </div>
+    </section>
+
+    <section id="sets" class="collection container">
+      <h2 class="section-title">Dining Sets</h2>
+      <p class="section-sub">Curated sets that balance comfort and design.</p>
+      <div class="product-grid">
+        <div class="card">
+              <div class="product-visual">
+                <img src="assets/images/gold_dining.jpg" alt="Marquis Dining Table" style="width:100%;height:100%;object-fit:cover;border-radius:8px">
+              </div>
+          <h4 class="product-title">Marquis Table Set</h4>
+          <div class="product-price">₦610,000</div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <button id="view-btn-3" class="btn primary" onclick="openModal(3)">View</button>
+            <button id="add-btn-3" class="btn" onclick="addToCart(3)">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="product-visual">
+            <img src="assets/images/yellow_chair.jpg" alt="Capri Dining Chairs" style="width:100%;height:100%;object-fit:cover;border-radius:8px">
+          </div>
+          <h4 class="product-title">Capri Dining Chairs (Set of 4)</h4>
+          <div class="product-price">₦220,000</div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <button id="view-btn-2" class="btn" onclick="openModal(2)">View</button>
+            <button id="add-btn-2" class="btn primary" onclick="addToCart(2)">Add to cart</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- product modal (local copy, for pages without the index modal) -->
+    <div id="productModal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button id="closeModal" class="icon-btn close-modal">✖</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Opulent Home</div>
+      <!-- <div class="socials">
+        <a href="#" aria-label="instagram">IG</a>
+        <a href="#" aria-label="facebook">FB</a>
+      </div> -->
+    </div>
+  </footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

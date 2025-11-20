@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Aria Nightstand">
+  <rect width="100%" height="100%" fill="#f5efe8"/>
+  <rect x="120" y="180" width="160" height="160" rx="16" fill="#cfa883"/>
+  <rect x="360" y="180" width="160" height="160" rx="16" fill="#b89b7a"/>
+  <text x="40" y="70" font-family="Georgia, serif" font-size="36" fill="#6b5b50">Aria Nightstand</text>
+</svg>

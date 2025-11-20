@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Backyard — Opulent Home</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Backyard collection — outdoor furniture and accessories.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html" aria-label="Opulent Home logo">
+          <img src="assets/images/logo.jpg" alt="Opulent Home" width="60" height="34" style="display:block">
+        </a>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="dining.html">Dining</a>
+        <a href="bedroom.html">Bedroom</a>
+        <a href="kitchen.html">Kitchen</a>
+        <a href="backyard.html" aria-current="page">Backyard</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="search">🔍</button>
+        <button class="icon-btn" aria-label="cart">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <h1>Backyard Collection — <span class="accent">Alfresco elegance</span></h1>
+          <p>Durable outdoor pieces with refined silhouettes — weather-resistant finishes and natural tones.</p>
+          <a href="#outdoor" class="btn primary">Shop Outdoor</a>
+        </div>
+        <div class="hero-art">
+          <img class="hero-scenery" src="assets/images/sitout.jpg" alt="backyard illustration" style="width:100%;height:auto;border-radius:18px;box-shadow:var(--shadow)">
+        </div>
+      </div>
+    </section>
+
+    <section id="outdoor" class="collection container">
+      <h2 class="section-title">Outdoor Seating</h2>
+      <p class="section-sub">Lightweight frames and weatherproof weaves for lasting comfort.</p>
+      <div class="product-grid">
+        <div class="card">
+          <div class="product-visual">
+            <img src="assets/images/red_blue.jpg" alt="Haven Lounger" style="width:100%;height:100%;object-fit:cover;border-radius:8px">
+          </div>
+          <h4 class="product-title">Haven Lounger</h4>
+          <div class="product-price">₦150,000</div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <button id="view-btn-6" class="btn primary" onclick="openModal(6)">View</button>
+            <button id="add-btn-6" class="btn" onclick="addToCart(6)">Add to cart</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- product modal (local copy) -->
+    <div id="productModal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button id="closeModal" class="icon-btn close-modal">✖</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Opulent Home</div>
+      <!-- <div class="socials">
+        <a href="#" aria-label="instagram">IG</a>
+        <a href="#" aria-label="facebook">FB</a>
+      </div> -->
+    </div>
+  </footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
